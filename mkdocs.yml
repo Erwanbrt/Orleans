@@ -3,6 +3,4 @@ theme:
     name: material
  palette:
 scheme: "slate" # Pour un thème sombre
-nav:
-- Home: "index.md"
-- About: "about.md"
+
