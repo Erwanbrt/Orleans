@@ -1,6 +1,6 @@
 site_name: My Docs
 theme:
     name: material
- palette:
-scheme: "slate" # Pour un thème sombre
+    palette:
+      scheme: "slate" # Pour un thème sombre
 
