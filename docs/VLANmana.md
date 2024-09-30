@@ -10,4 +10,4 @@ En premier temps nous avons stacker les deux switchs pour avoir plus d’interfa
 4. VLAN DMZ : 231
 5. VLAN (wifi employés) : 237 
 6. VLAN (wifi visiteurs) : 236
-7. VLAN       : 238
+7. VLAN  intercom  : 238

@@ -4,3 +4,26 @@ theme:
     palette:
       scheme: "slate" # Pour un thème sombre
 
+nav:  
+  - Contexte: contexte.md
+  - Infrastructure :
+    - schéma réseau.md #schéma logique et physique
+    - VLAN.md #id
+    - Equipements.md
+  - Configuration : 
+    - Coeur de réseau.md
+    - Routeurs.md #100et200 
+      - Les protocoles : 
+        - HSRP.md  
+    - Firewall.md #310et210
+    - Machines Virtuelles : 
+      - Windows Serveur.md #AD,DHCP
+      - Debian.md
+  - VLANmana.md
+  - configssh.md
+  - firewall storchield.md
+  - infrastructure.md
+  - pcroot.md
+  - RDP.md
+  - routeurconfig.md
+  - VM.md
