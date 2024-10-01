@@ -3,6 +3,8 @@ theme:
     name: material
     palette:
       scheme: "slate" # Pour un thème sombre
+extra_css:
+  - extra.css 
 
 nav:  
   - Accueil: index.md

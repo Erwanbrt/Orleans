@@ -1,4 +1,4 @@
-# Schéma-réseau 
+# Schéma réseau 
 
 * Rappel du contexte
 
@@ -23,5 +23,10 @@
       <th>Nombre total de machines</th>
       <th>94</th>
     <tr>
+  </table>
+
+![Schéma Réseau](images/Shema-Reseau.webp)
+
+
 
 

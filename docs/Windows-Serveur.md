@@ -12,9 +12,29 @@ Et création des 3 sessions administrateur
 ## Mise en place du serveur DHCP pour les différents VLANS.
     
 Afin de pouvoir obtenir une addresse automatiquement sur nos VLANS.<br>
-    - R&D (235)<br>
-    - WiFi Visiteurs (236)<br>
-    - WiFi Employés (237)<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>VLAN</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>R&D</th>
+            <th>235</th>
+        </tr>
+        <tr>
+            <th>WiFi visiteurs</th>
+            <th>236</th>
+        </tr>
+        <tr>
+            <th>WiFi employées</th>
+            <th>237</th>
+        </tr>
+    </body>
+</table>
 
 Pour cela nous avons créer notre serveur DHCP sur notre Windows Serveur. 
 
