@@ -1,4 +1,4 @@
-# configuration routeur cisco
+# Routeurs
 
 - 1. Rénitialisation du routeur
 installer : sudo apt install minicom 
@@ -13,6 +13,8 @@ reset
 
 
 - 3. ssh 
+
+ 
 
 
 - 4. configuration interfaces virtuelles 
@@ -29,11 +31,11 @@ permettre à plusieurs dispositifs d'une réseau local (IP inside) de partager u
 
 Permet d'asurer la redondance des passerelles en créant une adresse IP virtuelle partagée dans notre cas 192.168.10.254. 
 
-Un routeur actif gère le trafic, tandis qu’un routeur en veille prend le relais en cas de panne. Les routeurs échangent des paquets pour surveiller leur état, garantissant ainsi une haute disponibilité du réseau.
+Un routeur actif gère le trafic, tandis qu’un routeur en veille prend leCoeur de réseau relais en cas de panne. Les routeurs échangent des paquets pour surveiller leur état, garantissant ainsi une haute disponibilité du réseau.
 
 Dans ce cas avec le routeur Fibre et celui de L'ADSL nous devons les configurer les interfaces définir une priorité qui sera plus élévés pour l'un dans ce cas celui de l'ADSL (priorité de 110).
 
-Grace à cette configuration le routeur ADSL sera le routeur actif tant qu'il est disponible. En cas de panne du routeur ADSL ou de sa connexion, le routeur de la fibre prendra automatiquement le relais en tant que routeur actif. 
+Grace à cette configuration le routeur ADSL sera le routeur actif tant qu'il est disponible. En cas de panne du routeur ADSL ou de sa connexion, le routeur de la fibre prendra automatiquement le relais en tant que routeur actif. Coeur de réseau
 
 
 ## access list sur les routeurs

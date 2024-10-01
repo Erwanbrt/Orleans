@@ -1,4 +1,4 @@
-# Firewalls Storchield
+# Firewall
 
 1. Accéder à l’interface de gestion du firewall Stormshield
 

@@ -6,24 +6,17 @@ theme:
 
 nav:  
   - Contexte: contexte.md
-  - Infrastructure :
-    - schéma réseau.md #schéma logique et physique
-    - VLAN.md #id
-    - Equipements.md
-  - Configuration : 
-    - Coeur de réseau.md
-    - Routeurs.md #100et200 
-      - Les protocoles : 
-        - HSRP.md  
-    - Firewall.md #310et210
-    - Machines Virtuelles : 
-      - Windows Serveur.md #AD,DHCP
-      - Debian.md
-  - VLANmana.md
-  - configssh.md
-  - firewall storchield.md
-  - infrastructure.md
-  - pcroot.md
-  - RDP.md
-  - routeurconfig.md
-  - VM.md
+  - Infrastructure:
+      - Schéma Réseau: Schéma-réseau.md
+      - VLAN: VLAN.md
+      - Équipements: Equipements.md
+  - Configuration:
+      - Cœur de Réseau: Coeur-de-réseau.md
+      - Routeurs: Routeurs.md
+      - Protocoles:
+          - HSRP: HSRP.md
+          - Firewall: Firewall.md
+          - RDP: RDP.md
+  - Machines Virtuelles:
+      - Windows Serveur: Windows-Serveur.md
+      - Debian: Debian.md
