@@ -13,20 +13,20 @@
     <tr>
       <th>Nombre de PC fixes</th>
       <th>80</th>
-    <tr>
-      <th>Nombre de PC portable</th>
-      <th>3</th>
-    <tr>
-      <th>Nombre de serveurs</th>
-      <th>11</th>
-    <tr>
-      <th>Nombre total de machines</th>
-      <th>94</th>
-    <tr>
-  </table>
+    <tr>Mise en place du serveur DHCP pour les différents VLANS.
 
-![Schéma Réseau](images/Shema-Reseau.webp)
+Afin de pouvoir obtenir une addresse automatiquement sur nos VLANS.
+Nom 	VLAN
+R&D 	235
+WiFi visiteurs 	236
+WiFi employées 	237Mise en place du serveur DHCP pour les différents VLANS.
 
+Afin de pouvoir obtenir une addresse automatiquement sur nos VLANS.
+Nom 	VLAN
+R&D 	235
+WiFi visiteurs 	236
+WiFi employées 	237
 
+Pour cela nous avons créer notre serveur DHCP sur notre Windows Serveur.
 
-
+Dans le gestionnaire de Serveur: 
