@@ -6,7 +6,6 @@ theme:
 
 nav:  
   - Accueil: index.md
-  - Contexte: contexte.md
   - Infrastructure:
       - Schéma Réseau: Schéma-réseau.md
       - VLAN: VLAN.md

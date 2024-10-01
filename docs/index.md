@@ -1,18 +1,11 @@
-# Welcome To MKDocs
+# Contexte
 
-For full documentation visit [mkdocs.org] (https://www.mkdocs.org) .
+# Bienvenue 
+Nous sommes en BTS SIO 2 et dans le cadre de notre projet de fin d'année nous devons réaliser une infrastructure réseau pour l'entreprise SportLudique. Nous sommes un groupe de 3 : Erwan BRIET, Elouenn ROUSSEAU, Kevin SOULIER 
 
-# Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site. 
-* `mkdocs -h` - Print help message and exit.
+# Contexte
 
-## Project layout
-    mkdocs. yml         # The configuration file.
-    docs/ 
-        index.nd        # The documentation homepage.
-        ...             # Other markdown pages, images and other
-        files.
+SportLudique est une société basée sur 4 sites distants Chartres, Tours, Orléans et Châteauroux. Elle est spécialisée dans la conception et la production d’articles de sports non conventionnels.
 
+L’infrastructure informatique et réseau est prise en charge par le département "Solutions d’Infrastructure Système et Réseau" (SISR) qui se charge de l’exploitation de l’ensemble des équipements du parc ainsi que de la réalisation des projets informatiques.
