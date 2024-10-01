@@ -5,7 +5,7 @@ theme:
       scheme: "slate" # Pour un thème sombre
 
 nav:  
-  - Accueil: Index.md
+  - Accueil: index.md
   - Contexte: contexte.md
   - Infrastructure:
       - Schéma Réseau: Schéma-réseau.md
