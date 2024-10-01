@@ -1,12 +1,27 @@
 # Schéma-réseau 
 
-* Equipement
+* Rappel du contexte
 
-`Nombre : 60 utilisateurs`
-Ordinateurs : 83 
-80 Fixes 
-3 PC 
-Serveurs : 11 
-Hôtes : 94  
+    SportLudique, spécialisée dans les articles de sport non conventionnels, est répartie sur quatre sites : Chartres, Tours, Orléans et Châteauroux. L'infrastructure réseau est gérée par le département SISR, responsable de l'exploitation du parc informatique et des projets réseaux.
 
-ip du réseau : 172.28.32.0 à .63 /19
+* Les besoins
+
+  <table>
+    <tr>
+      <th>Nombre d'utilisateurs</th>
+      <th>60</th>
+    <tr>
+      <th>Nombre de PC fixes</th>
+      <th>80</th>
+    <tr>
+      <th>Nombre de PC portable</th>
+      <th>3</th>
+    <tr>
+      <th>Nombre de serveurs</th>
+      <th>11</th>
+    <tr>
+      <th>Nombre total de machines</th>
+      <th>94</th>
+    <tr>
+
+
