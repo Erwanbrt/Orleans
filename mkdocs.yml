@@ -1,6 +1,7 @@
-site_name: My Docs
+site_name: Infrastructure Orleans 2024/2025
 theme:
     name: material
+    logo: "images/logo.png"
     palette:
       scheme: "slate" # Pour un thème sombre
 extra_css:
@@ -9,16 +10,21 @@ extra_css:
 nav:  
   - Accueil: index.md
   - Infrastructure:
-      - Schéma Réseau: Schéma-réseau.md
+      - Réseau: Réseau.md
       - VLAN: VLAN.md
-      - Équipements: Equipements.md
-  - Configuration:
-      - Cœur de Réseau: Coeur-de-réseau.md
-      - Routeurs: Routeurs.md
-      - Protocoles:
-          - HSRP: HSRP.md
-          - Firewall: Firewall.md
-          - RDP: Remote Desktop Protocol.md
+  - Équipements:
+     - Cœur de Réseau:
+        - Configuration: Conf-Coeur-de-réseau.md
+     - Routeurs:
+        - Configuration: Conf-Routeurs.md
+        - HSRP: HSRP.md
+        - RDP: Remote-Desktop-Protocol.md
+     - Firewall:
+        - Configuration: Conf-Firewall.md
   - Machines Virtuelles:
-      - Windows Serveur: Windows-Serveur.md
-      - Debian: Debian.md
+      - Windows Serveur: 
+        - Configuration: Conf-Windows-Serveur.md
+        - DHCP: Serveur-DHCP.md
+      - Debian:
+        - Configuration: Conf-Debian.md
+        - Serveur Apache: Serveur-Apache.md
