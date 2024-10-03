@@ -1,8 +1,8 @@
 # VLAN 
 
-1. VLAN Management: 230
+Afin de segmenter et différencier les différents pôles de notre organisation au sein de notre réseau, nous avons adopté la technologie des **VLANs** (Virtual Local Area Networks). Cette approche nous permet d’isoler les différents sous-réseaux de manière logique, facilitant ainsi la gestion du trafic, l’amélioration de la sécurité, et l’optimisation des performances réseau en attribuant des ressources dédiées à chaque pôle.
 
-En premier temps nous avons stacker les deux switchs pour avoir plus d’interfaces, ensuite nous avons diviser le réseau en /25 en deux afin configurer le vlan de management 230 sur l’interface gigabit 1/0/1 avec l’ip 172.28.63.129/25 Nous avons créé une connexion ssh pour pouvoir se connecter au switch à distance à l’aide de notre user adminorl et l’adresse ip que nous lui avons attribué.  
+Notre plage d’adresses IP est **172.28.32.0/19**, ce qui nous offre une capacité d’adressage suffisante pour couvrir les besoins de chaque segment de réseau. Afin d’assurer une gestion efficace de ces adresses et de maintenir une vue d’ensemble actualisée de notre infrastructure, nous avons mis en place un système de **IPAM** (IP Address Management). Cet outil nous permet de référencer l’ensemble des adresses IP, d’attribuer les sous-réseaux à chaque VLAN de manière structurée, et de garantir une mise à jour continue de la configuration réseau, notamment en cas de modifications ou d’expansions. L’IPAM joue un rôle crucial dans l’optimisation de l’allocation des adresses et dans la prévention des conflits d’adressage.
 
 <table>
     <thead>
