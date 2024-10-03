@@ -13,7 +13,7 @@ th {
     height: auto;    /* Conserve le ratio */
     margin: 0 auto;  /* Ajoute des marges auto pour centrer */
   }
-underline {
+.underline {
   text-decoration: underline;
   text-decoration-color:azure
 }

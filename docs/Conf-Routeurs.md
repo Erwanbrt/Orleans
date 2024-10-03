@@ -1,25 +1,33 @@
-# Routeurs
+# Le materiel
 
-- 1. Rénitialisation du routeur
-installer : sudo apt install minicom 
-faire minicom sudo minicom - s
-configuration du port série avec /dev/tty
-aller dans le ROMmon avec ctrl pause 
-commande confreg 0x2142
-reset
+Pour fournir l'accés internet a notre infrastructure nous avons a notre disposition deux routeurs cisco 1921.<br>
 
-- 2. création du Vlan de management 
+- L'un fournira internet haut débit en <b>Fibre</b>, il sera notre connection primaire<br>
+
+- L'autre fournira internet en <b>ADSL</b> il, sera notre connection secondaire.
+
+Pour effectuer une priorité sur le trafic nous allons utiliser le protocole <b>HSRP</b>.
 
 
+# Rénitialisation des routeurs
 
-- 3. ssh 
+Pour avoir accées a notre routeur en port serie sur nos machines linux il faut installer et configurer le minicom avec les commandes suivantes :
 
- 
+        sudo apt install minicom 
+        minicom sudo minicom - s
+        /dev/tty
+Nous pouvons maintenant nous connecter a notre routeur grace au port serie et au logiciel <b>putty</b>
 
+Une fois connecter nous allons aller dans le <b>ROMmon</b> avec <b>ctrl pause</b> 
 
-- 4. configuration interfaces virtuelles 
+Le ROMon s'ouvre et nous pouvons y entrer la commande :
 
-- 5. 
+        confreg 0x2142
+        reset
+
+# Configuration du <b>SSH</b>
+
+Afin de mettre en place notre <b>SSH</b> nous devons d'abord mettre en place notre <b>VLAN</b> de management en créant une interface virtuelle sur notre 
 
 
 

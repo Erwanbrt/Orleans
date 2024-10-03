@@ -1,11 +1,24 @@
 # HSRP
 
-Permet d'asurer la redondance des passerelles en créant une adresse IP virtuelle partagée dans notre cas 192.168.10.254. 
+### Définition : 
 
-Un routeur actif gère le trafic, tandis qu’un routeur en veille prend leCoeur de réseau relais en cas de panne. Les routeurs échangent des paquets pour surveiller leur état, garantissant ainsi une haute disponibilité du réseau.
+<b>(Hot Standby Router Protocol)</b> est un protocole de redondance développé par <b>CISCO.</b> 
 
-Dans ce cas avec le routeur Fibre et celui de L'ADSL nous devons les configurer les interfaces définir une priorité qui sera plus élévés pour l'un dans ce cas celui de l'ADSL (priorité de 110).
+Il permet d’assurer une haute disponibilité des passerelles par défaut (ou routeurs) dans un réseau local. Il est conçu pour éviter un point de défaillance unique dans le réseau en offrant une solution de basculement automatique lorsque la passerelle principale devient indisponible. 
 
-Grace à cette configuration le routeur ADSL sera le routeur actif tant qu'il est disponible. En cas de panne du routeur ADSL ou de sa connexion, le routeur de la fibre prendra automatiquement le relais en tant que routeur actif. Coeur de réseau
+Il permet à plusieurs routeurs ou passerelles de collaborer afin de présenter une seule passerelle virtuelle aux hôtes du réseau. Cela garantit que si le routeur actif (qui achemine réellement le trafic) échoue, un routeur de secours prend automatiquement le relais sans que les hôtes ne s’en aperçoivent.
 
+Dans notre cas nous avons définit en <b>routeur</b> prioritaire la <b>FIBRE</b> et la passerelle par défaut sera <b>192.168.10.254</b>
+
+## Configuration du <b>HSRP</b>
+
+dans les deux routeurs la configuration est diffférente, nous allons alors commentcer par le routeur <b>FIBRE</b> (Primaire) grace au commandes suivantes :
+
+        ****
+        ****
+
+Configuration dans le routeur <b>ADSL</B> (Secondaire) :
+
+        *****
+        *****
 
