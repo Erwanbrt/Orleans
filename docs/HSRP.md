@@ -12,13 +12,28 @@ Dans notre cas nous avons définit en <b>routeur</b> prioritaire la <b>FIBRE</b>
 
 ## Configuration du <b>HSRP</b>
 
-dans les deux routeurs la configuration est diffférente, nous allons alors commentcer par le routeur <b>FIBRE</b> (Primaire) grace au commandes suivantes :
+dans les deux routeurs la configuration est diffférente, nous allons alors commencer par le routeur <b>FIBRE</b> (Primaire) grace au commandes suivantes :
 
-        ****
-        ****
+        RTR-ORLEANS-FIBRE>enable
+        RTR-ORLEANS-FIBRE#conf t
+        RTR-ORLEANS-FIBRE#(config)interface GigabitEthernet 0/1.239
+        RTR-ORLEANS-FIBRE#(config-if) standby 1 ip 192.168.10.254
+        RTR-ORLEANS-FIBRE#(config-if) standby 1 priority 110
+        RTR-ORLEANS-FIBRE#(config-if) standby 1 preempt
+        RTR-ORLEANS-FIBRE#(config-if) exit
+        RTR-ORLEANS-FIBRE#(config) exit
+        RTR-ORLEANS-FIBRE# write mem
 
 Configuration dans le routeur <b>ADSL</B> (Secondaire) :
 
-        *****
-        *****
+        RTR-ORLEANS-ADSL>enable
+        RTR-ORLEANS-ADSL#conf t
+        RTR-ORLEANS-ADSL#(config)interface GigabiEethernet 0/1.239
+        RTR-ORLEANS-ADSL#(config-if)standby 1 ip 192.168.10.254
+        RTR-ORLEANS-ADSL#(config-if)standby 1 preempt
+        RTR-ORLEANS-ADSL#(config-if)exit
+        RTR-ORLEANS-ADSL#(config)exit
+        RTR-ORLEANS-ADSL#write mem
+
+
 

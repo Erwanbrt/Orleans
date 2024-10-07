@@ -25,6 +25,7 @@ nav:
       - Windows Serveur: 
         - Configuration: Conf-Windows-Serveur.md
         - DHCP: Serveur-DHCP.md
+        - DNS Redirrecteur: DNS.md
       - Debian:
         - Configuration: Conf-Debian.md
         - Serveur Apache: Serveur-Apache.md
