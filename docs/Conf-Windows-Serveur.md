@@ -4,7 +4,7 @@ Utilisation de Nutanix pour créer la VM Windows Server pour l'AD afin qu'il y e
 
 Nous avons ensuite mit serveur DNS primaire, DHCP.<br>
 
-Créer le domaine en lan.orleans.sportludique.<br>
+Créer le domaine en lan.orleans.sportludique.fr<br>
 
 Et création des 3 sessions administrateur 
 
