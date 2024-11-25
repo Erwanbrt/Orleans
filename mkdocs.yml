@@ -21,6 +21,7 @@ nav:
         - RDP: Remote-Desktop-Protocol.md
      - Firewall:
         - Configuration: Conf-Firewall.md
+        - Certificat SSL : Certificat-ssl.md
   - Machines Virtuelles:
       - Windows Serveur: 
         - Configuration: Conf-Windows-Serveur.md
