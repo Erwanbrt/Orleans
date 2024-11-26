@@ -1,5 +1,7 @@
 # Bienvenue sur la documentation du projet SportLudique Orleans.
 
+![ ](images/Sport Ludique.jpg)
+
 ## Contexte du projet
 
 Dans le cadre de notre formation en BTS Services Informatiques aux Organisations (SIO), option Solutions d’Infrastructure, Systèmes et Réseaux (SISR), nous avons pour mission de concevoir une infrastructure réseau complète pour l’entreprise **SportLudique**. Ce projet est une composante clé de notre évaluation en deuxième année (SIO2).

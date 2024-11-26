@@ -1,7 +1,8 @@
 site_name: Infrastructure Orleans 2024/2025
+copyright: Copyright &copy; 2023 - 2025 Elouenn ROUSSEAU; Kevin SOULIER; Erwan BRIET
 theme:
     name: material
-    logo: "images/logo.png"
+    logo: "images/s.png"
     palette:
       scheme: slate
       primary: amber
