@@ -3,7 +3,12 @@ theme:
     name: material
     logo: "images/logo.png"
     palette:
-      scheme: "slate" # Pour un thème sombre
+      scheme: slate
+      primary: amber
+      accent: amber
+      theme:
+
+    
 extra_css:
   - extra.css 
 
