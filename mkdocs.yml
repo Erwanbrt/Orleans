@@ -35,4 +35,20 @@ nav:
         - DNS Redirrecteur: DNS.md
       - Debian:
         - Configuration: Conf-Debian.md
-        - Serveur Apache: Serveur-Apache.md
+        - Serveur Web: 
+          - Apache: Serveur-Apache.md
+          - SSL: SSL.md
+          - NGINX: 
+            - Installation: NGINXinstall.md
+            - Reverse proxy: Reverseproxy.md
+            - Load balancing: Loadbalencing.md
+        - DNS: DNSDEB.md
+        - Serveur mail: 
+          - Postfix: Postfix.md
+          - Dovecot: Dovecot.md
+          - Client thunderbird: thunderbird.md
+          - LDAP: 
+            - Installation LDAP: InstallLDAP.md
+            - Modification Postfix: Modifpostfix.md
+            - Modification Dovecot: Modifdovecot.md
+            - Configuration LDAP: modifLDAP.md
