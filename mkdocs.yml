@@ -35,6 +35,7 @@ nav:
         - DNS Redirrecteur: DNS.md
       - Debian:
         - Configuration: Conf-Debian.md
+        - Serveur VPN: Serveur-VPN.md
         - Serveur Web: 
           - Apache: Serveur-Apache.md
           - SSL: SSL.md
