@@ -25,4 +25,5 @@ Les besoins :
 
 ## Shéma réseau
 
-![ ](images/Shema-Reseau.webp)
+![ ](images/Shema-logique.png)
+
