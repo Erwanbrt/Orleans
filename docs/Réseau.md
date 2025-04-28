@@ -25,5 +25,7 @@ Les besoins :
 
 ## Shéma réseau
 
-![ ](images/Shema-logique-V2.3.png)
+![ ](images/Shemaréseaux3.0.png)
+
+
 

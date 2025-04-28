@@ -22,14 +22,14 @@ Notre plage d’adresses IP est **172.28.32.0/19**, ce qui nous offre une capaci
             <th>192.168.45.1</th>
             <th>/24</th>
         </tr>
-            <th>Serveur</th>
+            <th>Serveurs</th>
             <th>232</th>
             <th>172.28.32.0</th>
             <th>/24</th>
         </tr>
-            <th>DMZ Privée</th>
+            <th>LIBRE</th>
             <th>233</th>
-            <th>192.168.145.0</th>
+            <th>192.168.33.0</th>
             <th>/24
         </tr>
             <th>R&D</th>
@@ -39,10 +39,10 @@ Notre plage d’adresses IP est **172.28.32.0/19**, ce qui nous offre une capaci
         </tr>
             <th>WiFI visiteurs</th>
             <th>236</th>
-            <th>172.28.36.0</th>
+            <th>192.168.28.0</th>
             <th>/24</th>
         </tr>
-            <th>WiFi employées</th>
+            <th>LIBRE</th>
             <th>237</th>
             <th>172.28.37.0</th>
             <th>/24</th>

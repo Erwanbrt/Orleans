@@ -8,7 +8,7 @@ Pour commancer la configuraton de notre <b>Firewall</b> nous devons le configure
 
 Pour rappel voici le shema réseau :
 
-![ ](images/Shema-Reseau.webp)
+![ ](images/Shemaréseaux3.0.png)
 
 Nous devons adapter la configuration pour les deux <strong>Firewall</strong> 
 

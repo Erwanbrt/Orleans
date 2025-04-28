@@ -12,16 +12,16 @@
     </thead>
     <tbody>
         <tr>
+            <th>Management</th>
+            <th>230</th>
+        </tr>
+        <tr>
             <th>R&D</th>
             <th>235</th>
         </tr>
         <tr>
             <th>WiFi visiteurs</th>
             <th>236</th>
-        </tr>
-        <tr>
-            <th>WiFi employées</th>
-            <th>237</th>
         </tr>
     </body>
 </table>

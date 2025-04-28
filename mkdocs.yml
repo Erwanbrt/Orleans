@@ -28,6 +28,9 @@ nav:
      - Firewall:
         - Configuration: Conf-Firewall.md
         - Certificat SSL : Certificat-ssl.md
+     - Borne Wi-Fi :
+        - Configuration: Conf-Wi-Fi.md
+        - Portail captif: Conf-portailcaptif.md
   - Machines Virtuelles:
       - Windows Serveur: 
         - Configuration: Conf-Windows-Serveur.md
