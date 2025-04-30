@@ -56,3 +56,7 @@ nav:
             - Modification Postfix: Modifpostfix.md
             - Modification Dovecot: Modifdovecot.md
             - Configuration LDAP: modifLDAP.md
+        - Zabbix: zabbix.md
+       
+            
+            
