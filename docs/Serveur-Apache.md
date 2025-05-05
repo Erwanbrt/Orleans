@@ -4,11 +4,9 @@ Afin d’avoir accès à notre site web nous avons d’eu le mettre sur un serve
 
 Forme 
 
-1. Installation d'Apache2 
+#1. Installation d'Apache2 
 
-Installez Apache2 : 
-
-sudo apt install apache2  
+    sudo apt install apache2  
 
 Vérifiez le statut du service Apache : 
 
