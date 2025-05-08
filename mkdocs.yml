@@ -57,7 +57,7 @@ nav:
             - Modification Dovecot: Modifdovecot.md
             - Configuration LDAP: modifLDAP.md
         - Zabbix: zabbix.md
-        - Vaultwarden : Vaultwarden.md
-       
-            
+        - Gestionnaire de mot de passe : 
+          - Vaultwarden : Vaultwarden.md
+          - HTTPS : Vault-https.md
             
