@@ -57,6 +57,7 @@ nav:
             - Modification Dovecot: Modifdovecot.md
             - Configuration LDAP: modifLDAP.md
         - Zabbix: zabbix.md
+        - Vaultwarden : Vaultwarden.md
        
             
             

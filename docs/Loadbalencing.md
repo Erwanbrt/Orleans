@@ -3,7 +3,7 @@
 
 Le Load Balancing permet de répartir le trafic sur plusieurs serveurs pour une meilleure répartition de la charge, sur Nginx : 
 
-1. Créer un fichier de configuration pour le Load Balancer   
+1. Créer un fichier de configuration pour le Load Balancer
 
    Création du fichier dans le repertoire conf.d pour la configuration du Load Balancer : 
 

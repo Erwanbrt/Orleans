@@ -1,5 +1,5 @@
 # Reverse Proxy
-1. réer un fichier de configuration pour le site   
+1. Créer un fichier de configuration pour le site   
 
 Navigue vers le répertoire `sites-available` de Nginx et crée un nouveau fichier de configuration : 
 
