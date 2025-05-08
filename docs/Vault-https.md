@@ -20,9 +20,13 @@
 Dans le fichier `/opt/vaultwarden/docker-compose.yml` :
 
 > Ajouter dans la section environment :
+     
+     
      - ROCKET_TLS={certs="/ssl/vaultwarden.crt",key="/ssl/vaultwarden.key"}
 
 > Modifier la section volumes :
+    
+    
     volumes :
       - ./data:/data
       - ./ssl:/ssl
