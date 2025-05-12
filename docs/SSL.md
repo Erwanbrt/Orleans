@@ -11,18 +11,12 @@ Dans ce cas nous sommes notre propre autorité de certification.
 
     openssl version 
 
-### 1.1 Configuration openSSL 
-
-Il est important de configurer le fichier /etc/ssl/openssl.cnf  
-
-- METTRE PHOTO DU FICHIER CONF  
-
 ## 2. Organisation 
 
 
 ![ ](images/tree-certificat-ssl.png)
 
-Génération de la clé privée du serveur web :
+## 3. Création de la clé privée du serveur web :
 
     openssl genrsa 2048 > siteweb/keys/privatekey.key   
 
@@ -30,11 +24,11 @@ commande pour vérifier le contenu :
 
     openssl ec -in privatekey.key -text -noout 
 
-Génération d'une demande de certificat pour le serveur web : 
+## 4. Génération d'une demande de certificat pour le serveur web : 
 
     openssl req -new -key siteweb/keys/privatekey.key > siteweb/requests_certificats/demande.csr -config /etc/ssl/openssl.cnf 
 
-- rappeler les champs a mettre avec toutes la liste 
+> différents champs seront demandés 
 
 Si on veut vérifier notre demande on peut faire la commande :  
 
@@ -42,33 +36,30 @@ Si on veut vérifier notre demande on peut faire la commande :
 
 > Création du certificat de l'autorité de certification 
 
-## 3. la création de la clé privée :  
+## 5. Création de la clé privée :  
 
-    openssl genrsa -des3 2048 > [préciser le chemin] private_ca.key 
+    openssl genrsa -des3 2048 > private_ca.key 
 
-une pass phrase sera demandé  
+> une pass phrase sera demandé  
 
-Création du certificat pour la durée :  
+## 6. Création du certificat pour la durée :  
 
     openssl req -new -x509 -days 365 -key private_ca.key > autorite/certificats/ca.crt 
 
-rappeler les champs a mettre avec toutes la liste 
+> champs seront demandés comme précédemment 
 
 Signer la demande de certificat : 
+    
+    openssl x509 -req -in /home/orleans/ssl/siteweb/requests_certificats/demande.csr -out /home/orleans/ssl/siteweb/certificats/certificat_siteweb.crt -CA /home/orleans/ssl/autorite/certificats/ca.crt -CAkey /home/orleans/ssl/private_ca.key -CAcreateserial -CAserial /home/orleans/ssl/autorite/ca.srl -extfile /etc/ssl/openssl.cnf -extensions v3_req
 
-    openssl x509 -req -in [te_plante_pas].csr -out [a_adapter].crt -CA [certif_autorite].crt -CAkey [privatekey_ca].key -CAcreateserial -CAserial ca.srl -extfile /etc/ssl/openssl.cnf -extensions v3_req 
 
 Vérifier son contenu  :
 
-    openssl x509 -in siteweb/certificats/siteweb.crt -noout -text 
+    openssl x509 -in siteweb/certificats/certificat_siteweb.crt -noout -text 
 
-- METTRE PHOTO  
+## 7. Configuration du serveur web  
 
-Configuration du serveur web  
-
- 
-
-Copier le fichier `/etc/apache2/sites-available/default-ssl.conf` dans son dossier d'origine mais avec le nom de votre site web donc www.orleans .conf 
+Copier le fichier `/etc/apache2/sites-available/default-ssl.conf` dans son dossier d'origine mais avec le nom du site web donc www.orleans .conf 
 
 (en conservant l'extension .conf pour la commande a2ensite) 
 
@@ -79,7 +70,7 @@ Adapter : DocumentRoot et ServerName, SSLCertificateFile et SSLCertificatekeyf
 Activer le module SSL, activer le site, et redémarrer le service comme demandé : 
 
 
-  a2enmod ssl 
+    a2enmod ssl 
 
 Accéder au site et accepter le certificat et afficher ses informations 
 
