@@ -38,11 +38,25 @@ Dans le fichier `/opt/vaultwarden/docker-compose.yml` :
 
 ## 5. Accès et configuration
 
-HTTP : http://192.168.10.31:8080 
+### 5.1 Accès a Vaultwarden
 
--> HTTPS : https://192.168.10.31:8080 
+>HTTP : http://192.168.45.16:8080
+
+>HTTPS : https://192.168.45.16:8080 (avec avertissement SSL) pour le wifi employé 
+
+>HTTP : http://10.10.10.27:8080
+
+>HTTP : http://10.10.10.27:8080 en management
 
 (avec avertissement SSL)
+
+### 5.2 Accès à l'interface d'administration
+
+> URL : https://10.10.10.27:8080/admin
+
+> Se connecter avec ADMIN_TOKEN donc”xxxx”
+
+
 
 
 

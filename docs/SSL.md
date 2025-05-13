@@ -11,6 +11,12 @@ Dans ce cas nous sommes notre propre autorité de certification.
 
     openssl version 
 
+> Editer le fichier /etc/ssl/openssl.cnf  Ce fichier décrit le comportemant que gère openSSL. 
+> C'est dans ce fichier que nous imposerons les champs SAN (Subject Alternative Names). 
+
+![ ](images/opensslconf.png)
+
+
 ## 2. Organisation 
 
 
@@ -34,6 +40,8 @@ Si on veut vérifier notre demande on peut faire la commande :
 
     openssl req -in siteweb/requests_certificats/demande.csr -noout -text 
 
+![ ](images/demandecsr.png)
+
 > Création du certificat de l'autorité de certification 
 
 ## 5. Création de la clé privée :  
@@ -46,7 +54,8 @@ Si on veut vérifier notre demande on peut faire la commande :
 
     openssl req -new -x509 -days 365 -key private_ca.key > autorite/certificats/ca.crt 
 
-> champs seront demandés comme précédemment 
+> champs seront demandés comme précédemment mais attention ce sont des informations concernant l'autorité. 
+> Elles doivent être différentes des informations saisies précédemment pour le site web. Ici on gère notre propre autorité de certification qui est fictive.
 
 Signer la demande de certificat : 
     
@@ -57,23 +66,22 @@ Vérifier son contenu  :
 
     openssl x509 -in siteweb/certificats/certificat_siteweb.crt -noout -text 
 
+![ ](images/certifsiteweb.png)
+  
+
 ## 7. Configuration du serveur web  
 
 Copier le fichier `/etc/apache2/sites-available/default-ssl.conf` dans son dossier d'origine mais avec le nom du site web donc www.orleans .conf 
 
-(en conservant l'extension .conf pour la commande a2ensite) 
+> (en conservant l'extension .conf pour la commande a2ensite) 
 
-- METTRE PHOTO www.orleans.confpart1-2 
-
-Adapter : DocumentRoot et ServerName, SSLCertificateFile et SSLCertificatekeyfile, rediriger le port 443. 
+- Adapter : DocumentRoot et ServerName 
+- Modifier : SSLCertificateFile et SSLCertificatekeyfile et rediriger le port 443 (Vagrantfile). 
 
 Activer le module SSL, activer le site, et redémarrer le service comme demandé : 
-
 
     a2enmod ssl 
 
 Accéder au site et accepter le certificat et afficher ses informations 
 
- 
-
-## 4. Rajouter certificat dans le navigateur  
+> Penser à rajouter le certificat dans le navigateur  

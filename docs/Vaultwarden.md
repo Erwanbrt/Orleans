@@ -15,6 +15,7 @@ Ajout des dépôts officiels et installation :
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg]https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
     sudo apt update
+
     sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 Activation et vérification de Docker :
@@ -68,7 +69,7 @@ Si on veut changer le mot de passe il suffit de le changer dans <b>docker.compos
 
 
 ## 3.3 Créer compte utilisateur 
-On peut gérer les utilisateurs via : https://192.168.10.31:8080/admin
+On peut gérer les utilisateurs via : https://192.168.45.16:8080/admin
 
 
 
@@ -76,7 +77,7 @@ Pour créer un compte il y a trois possibilités :
 
 - Interface admin : cliquer sur Vault en haut dans le menu ce qui va nous amener sur la page web et créer un compte
 - Interface admin avec “enter mail”
-- URL : https://192.168.10.31:8080/#/login
+- URL : https://192.168.45.16:8080/#/login
 
 
 On peut soit choisir de créer un compte (qui sera par la suite ajouter à l’interface en admin vu au-dessus) ou alors se connecter directement si un mot de passe à déjà été défini. 
