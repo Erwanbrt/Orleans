@@ -12,7 +12,8 @@
 
    Ajoute la configuration suivante pour créer un Load Balancer : 
 
-      orleans@debianORL:/etc/nginx/conf.d$ cat load-balancer.conf
+>Dans /etc/nginx/conf.d/load-balancer.conf
+      
       upstream backend {
          ip_hash ;
          server 192.168.45.9 max_fails=3 fail_timeout=1s;
