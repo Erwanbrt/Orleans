@@ -7,7 +7,28 @@ Navigue vers le répertoire `sites-available` de Nginx et crée un nouveau fichi
 
 Il faudra faire pareil pour l’autre site mais avec un autre intitulé  
 
-![ ](images/available-enabled.jpg)
+
+        server {
+                listen 80;
+
+                server_name www.orleans.sportludique.fr;
+                return 301 https://Shost$request.uri;
+
+        }
+
+        server {
+                listen 443 ssl ;
+                server_name www.orleans.sportludique.fr;
+
+                ssl_certificate /etc/ssl/certificats-sitesweb/certificat_siteweb.crt; 
+                ssl_certificate_key /etc/ssl/certificats-sitesweb/privatekey.key;
+
+                location / {
+                proxy_pass http://backend;
+                include /etc/nginx/proxy_params;
+                }
+        }
+ 
 
 ## 2. Configuration du Reverse Proxy
 
