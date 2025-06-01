@@ -1,0 +1,19 @@
+table, th, td {
+    border: 1px solid rgb(255, 193, 5);
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+  }
+th {
+    text-align: center;
+  }
+
+  img {
+    max-width: 80%;  /* Limite la largeur à 80% de l'écran */
+    height: auto;    /* Conserve le ratio */
+    margin: 0 auto;  /* Ajoute des marges auto pour centrer */
+  }
+.underline {
+  text-decoration: underline;
+  text-decoration-color:azure
+}
