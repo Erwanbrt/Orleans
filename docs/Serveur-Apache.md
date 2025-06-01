@@ -36,7 +36,32 @@ Nous devrions obtenir cette page :
 
 #### Contenu du fichier : 
 
-Les deux images 
+> serveur 1 : 
+
+    <VirtualHost *:443>
+            ServerName 192.168.45.9       #192.168.45.10 pour le serveur 2
+ 
+            DocumentRoot /var/www/html/
+ 
+            ErrorLog ${APACHE_LOG_DIR}/error.log
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+ 
+        SSLEngine on
+
+            SSLCertificateFile      /etc/ssl/certs/xxxxxx.crt
+            SSLCertificateKeyFile   /etc/ssl/private/xxxx.key
+ 
+        <FilesMatch "\.(?:cgi|shtml|phtml|php)$">
+                SSLOptions +StdEnvVars
+        </FilesMatch>
+        <Directory /usr/lib/cgi-bin>
+                SSLOptions +StdEnvVars
+        </Directory>
+            SSLProtocol -all +TLSv1.2 +TLSv1.3
+            SSLCipherSuite HIGH:!aNULL:!MD5
+            SSLHonorCipherOrder on
+ 
+    </VirtualHost>
 
 ### Activer le site et recharger Apache : 
 
